@@ -1,0 +1,33 @@
+package Logintask1;
+
+import java.util.Scanner;
+public class login
+{
+
+    public static void main (String[] args)
+    {
+
+    String login;
+    String password;
+
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter your login:");
+        login = scan.next();
+        System.out.println("Enter your password:");
+        password = scan.next();
+        if(login.equals("user") && password.equals("qwerty"))
+        {
+            System.out.println("1.Even number");
+            System.out.println("2.Armstrong");
+            System.out.println("3.Reverse");
+            System.out.println("4.Fibonacci");
+            System.out.println("5.Replace");
+        }
+        else
+        {
+            System.out.println("Invalid password");
+
+        }
+    }
+
+}
